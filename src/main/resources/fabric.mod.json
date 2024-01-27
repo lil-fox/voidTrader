@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "voidtrader",
+  "version": "${version}",
+  "name": "voidTrader",
+  "description": "",
+  "authors": [],
+  "contact": {
+    "repo": "https://github.com/demos/voidTrader"
+  },
+  "license": "MIT",
+  "icon": "assets/voidtrader/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "net.lilfox.voidtrader.client.VoidTraderClient"
+    ]
+  },
+  "mixins": [
+    "voidtrader.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
